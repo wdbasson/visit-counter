@@ -1,4 +1,4 @@
-This repo demonstrates how a simple site visit counter in a PHP docker.
+This repo demonstrates a simple site visit counter in a PHP docker.
 
 # How to build
 ```
