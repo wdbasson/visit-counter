@@ -25,7 +25,7 @@ docker run --rm \
 
 To install mysqli PHP extention see official PHP docker hub on how to install PHP core extentions: https://hub.docker.com/_/php/
 
-To extend Dockerfile with mysql add the following:
+To add mysql extention to docker image add the following to Dockerfile:
 
 ```
 RUN docker-php-ext-install -j$(nproc) mysqli

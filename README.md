@@ -7,14 +7,14 @@ docker build -t zenlab/visit-counter .
 
 # How to run with docker image built from Dockerfile
 ```
-docker run -dti \
+docker run --rm \
   -p 80:80 \
   --name visit-counter \
   zenlab/visit-counter
 ```
 or, run with official php docker image
 ```
-docker run -dti \
+docker run --rm \
   -p 80:80 \
   --name php \
   -v "$PWD/scripts":/var/www/html \
@@ -23,7 +23,7 @@ docker run -dti \
 
 # How to overwrite the web root with a volume at runtime
 ```
-docker run -dti \
+docker run --rm \
   -p 80:80 \
   --name visit-counter \
   -v "$PWD/scripts":/var/www/html \
