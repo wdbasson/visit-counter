@@ -5,12 +5,20 @@ This repo demonstrates a simple site visit counter in a PHP docker.
 docker build -t zenlab/visit-counter .
 ```
 
-# How to run
+# How to run with docker image built from Dockerfile
 ```
 docker run -dti \
   -p 80:80 \
   --name visit-counter \
   zenlab/visit-counter
+```
+or, run with official php docker image
+```
+docker run -dti \
+  -p 80:80 \
+  --name php \
+  -v "$PWD/scripts":/var/www/html \
+  php:7.0-apache
 ```
 
 # How to overwrite the web root with a volume at runtime
