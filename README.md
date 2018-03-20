@@ -18,6 +18,10 @@ docker run -dti \
 ```
 http://localhost/visit.counter
 ```
+or
+```
+http://localhost/php.info
+```
 
 # Acknowledgments
 
