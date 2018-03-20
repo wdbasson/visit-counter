@@ -15,7 +15,7 @@ Checkout visit-counter repo and run tommylau example with modified index.php
 git clone https://github.com/wdbasson/visit-counter
 cd visit-counter
 docker run --rm \
-  -v $(pwd)/examples/mysqli-example/index.php:/app \
+  -v $(pwd)/examples/mysqli-example:/app \
   -w /app \
   --link some-mysql \
   tommylau/php php index.php
