@@ -10,6 +10,14 @@ docker build -t zenlab/visit-counter .
 docker run -dti \
   -p 80:80 \
   --name visit-counter \
+  zenlab/visit-counter
+```
+
+# How to overwrite the web root with a volume at runtime
+```
+docker run -dti \
+  -p 80:80 \
+  --name visit-counter \
   -v "$PWD/scripts":/var/www/html \
   zenlab/visit-counter
 ```
