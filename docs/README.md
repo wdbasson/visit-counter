@@ -1,9 +1,12 @@
 ### PHP-mysql integration
 
-## Task
+## End goal
 Extend v1.0 release to integrate with mysql and replace the countlog.txt text file functionality with a DB.
 
-## Supporting example
+# First task
+- connect to mysql docker from visit-counter docker
+
+# Supporting example
 
 Run official mysql docker
 ```
