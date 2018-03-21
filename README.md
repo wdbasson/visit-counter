@@ -1,20 +1,31 @@
-This repo demonstrates a simple site visit counter in a PHP docker.
+# Synopsis
 
-# How to build
+This repo serves as an introduction to containerization for interns at our lab.
+
+## Description
+
+The vanilla example demonstrates a simple stateful site visit counter in a PHP container.
+
+Two core concepts are conveyed in the vanilla example: 1) how to build your own docker from Dockerfile, and 2) how to mount a volume inside of a docker.
+
+The progression from the vanilla example is documented in [docs/README.md](../development/docs/README.md) where interns should incrementally build on the vanilla example in order to finally replace the functionality of the countlog.txt text file with a SQL DB running in a different container.
+
+## How to build
 ```
 docker build -t zenlab/visit-counter .
 ```
 
-# How to run with docker image built from Dockerfile
+# How to run
+## run with docker image built from Dockerfile
 ```
-docker run -dti \
+docker run --rm \
   -p 80:80 \
   --name visit-counter \
   zenlab/visit-counter
 ```
-or, run with official php docker image
+## run with official php docker image
 ```
-docker run -dti \
+docker run --rm \
   -p 80:80 \
   --name php \
   -v "$PWD/scripts":/var/www/html \
@@ -23,7 +34,7 @@ docker run -dti \
 
 # How to overwrite the web root with a volume at runtime
 ```
-docker run -dti \
+docker run --rm \
   -p 80:80 \
   --name visit-counter \
   -v "$PWD/scripts":/var/www/html \
