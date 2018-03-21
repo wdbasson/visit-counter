@@ -8,7 +8,7 @@ The vanilla example demonstrates a simple stateful site visit counter in a PHP c
 
 Two core concepts are conveyed in the vanilla example: 1) how to build your own docker from Dockerfile, and 2) how to mount a volume inside of a docker.
 
-The progression from the vanilla example is documented in docs/README.md where interns should incrementally build on the vanilla example in order to finally replace the functionality of the countlog.txt text file with a SQL DB running in a different container.
+The progression from the vanilla example is documented in [docs/README.md](../blob/development/docs/README.md) where interns should incrementally build on the vanilla example in order to finally replace the functionality of the countlog.txt text file with a SQL DB running in a different container.
 
 ## How to build
 ```
