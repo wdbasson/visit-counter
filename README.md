@@ -4,7 +4,7 @@ This repo serves as an introduction to containerization for interns at our lab.
 
 ## Description
 
-The vanilla example demonstrates a simple stateful site visit counter in a PHP container.
+The vanilla example demonstrates a simple site visit counter in a PHP container.
 
 Two core concepts are conveyed in the vanilla example: 1) how to build your own docker from Dockerfile, and 2) how to mount a volume inside of a docker.
 
