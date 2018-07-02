@@ -43,7 +43,7 @@ docker run --rm \
 
 # How to access
 ```
-http://localhost/visit.counter
+http://localhost/counter.php
 ```
 or
 ```
