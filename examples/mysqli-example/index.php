@@ -14,7 +14,6 @@ else {
 
 #$sql = "SHOW databases";
 
-
 #$sql = "SHOW DATABASES";
 #$result = $mysqli->query($sql);
 #if ($result === false) {
@@ -66,4 +65,3 @@ $result = mysqli_query($mysqli,$sql);
         }
     }
 ?>
-
